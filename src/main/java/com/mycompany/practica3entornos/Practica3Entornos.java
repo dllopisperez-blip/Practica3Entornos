@@ -46,14 +46,6 @@ public class Practica3Entornos {
                 } else if (opcion == 5) {
                     System.out.println("Saliendo del programa...");
                 } else {
-                    System.out.println("Opción no válida.");
-                }
-                    }
-                    // ... aquí irán las opciones 2, 3 y 4 en sus respectivas ramas
-                    
-                } else if (opcion == 5) {
-                    System.out.println("Saliendo del programa...");
-                } else {
                     System.out.println("Opción no válida. Debe ser entre 1 y 5.");
                 }
                 
