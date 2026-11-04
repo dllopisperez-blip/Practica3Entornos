@@ -31,7 +31,7 @@ public class Practica3Entornos {
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
                     } else if (opcion == 2) {
-                        // Aquí iría la resta
+                        System.out.println("Resultado: " + (a - b));
                     } else if (opcion == 3) {
                         System.out.println("Resultado: " + (a * b));
                     } else if (opcion == 4) {
