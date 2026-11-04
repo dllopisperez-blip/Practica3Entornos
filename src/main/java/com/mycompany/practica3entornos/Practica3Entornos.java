@@ -2,6 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
 package com.mycompany.practica3entornos;
 
 import java.util.Scanner;
@@ -12,6 +16,8 @@ public class Practica3Entornos {
         int opcion = 0;
         
         while (opcion != 5) {
+            // Mejora en el menú: un salto de línea para que se vea ordenado en la consola
+            System.out.println("\n--- MENÚ CALCULADORA ---");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
@@ -30,13 +36,14 @@ public class Practica3Entornos {
                     
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
-                    }
-                    // ... aquí irán las opciones 2, 3 y 4 en sus respectivas ramas
+                    } 
+                    // ... aquí mantienes tus opciones 2, 3 y 4 tal y como las tienes estructuradas
                     
                 } else if (opcion == 5) {
                     System.out.println("Saliendo del programa...");
                 } else {
-                    System.out.println("Opción no válida. Debe ser entre 1 y 5.");
+                    // Mejora en el mensaje para aclarar el rango permitido
+                    System.out.println("Opción no válida. Debe ser un número entre 1 y 5.");
                 }
                 
             } catch (NumberFormatException e) {
