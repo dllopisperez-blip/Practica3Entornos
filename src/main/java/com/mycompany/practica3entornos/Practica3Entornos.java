@@ -12,6 +12,7 @@ public class Practica3Entornos {
         int opcion = 0;
         
         while (opcion != 5) {
+            System.out.println("\n--- MENÚ ---");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
@@ -31,11 +32,10 @@ public class Practica3Entornos {
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
                     } else if (opcion == 2) {
-                        // Aquí iría la resta
+                        System.out.println("Resultado: " + (a - b));
                     } else if (opcion == 3) {
-                        // Aquí iría la multiplicación
+                        System.out.println("Resultado: " + (a * b));
                     } else if (opcion == 4) {
-                        // Control de errores específico para la división entre cero
                         if (b == 0) {
                             System.out.println("Error: No se puede dividir entre cero.");
                         } else {
@@ -46,19 +46,11 @@ public class Practica3Entornos {
                 } else if (opcion == 5) {
                     System.out.println("Saliendo del programa...");
                 } else {
-                    System.out.println("Opción no válida.");
-                }
-                    }
-                    // ... aquí irán las opciones 2, 3 y 4 en sus respectivas ramas
-                    
-                } else if (opcion == 5) {
-                    System.out.println("Saliendo del programa...");
-                } else {
                     System.out.println("Opción no válida. Debe ser entre 1 y 5.");
                 }
                 
             } catch (NumberFormatException e) {
-                System.out.println("Entrada no válida");
+                System.out.println("Error: Entrada no válida (introduce un número entero).");
             }
         }
         sc.close();
