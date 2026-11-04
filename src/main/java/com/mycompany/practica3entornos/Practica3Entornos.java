@@ -33,7 +33,7 @@ public class Practica3Entornos {
                     } else if (opcion == 2) {
                         // Aquí iría la resta
                     } else if (opcion == 3) {
-                        // Aquí iría la multiplicación
+                        System.out.println("Resultado: " + (a * b));
                     } else if (opcion == 4) {
                         // Control de errores específico para la división entre cero
                         if (b == 0) {
