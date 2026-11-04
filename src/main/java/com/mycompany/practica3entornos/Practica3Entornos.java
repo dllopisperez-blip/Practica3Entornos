@@ -30,6 +30,24 @@ public class Practica3Entornos {
                     
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
+                    } else if (opcion == 2) {
+                        // Aquí iría la resta
+                    } else if (opcion == 3) {
+                        // Aquí iría la multiplicación
+                    } else if (opcion == 4) {
+                        // Control de errores específico para la división entre cero
+                        if (b == 0) {
+                            System.out.println("Error: No se puede dividir entre cero.");
+                        } else {
+                            double resultado = (double) a / b;
+                            System.out.println("Resultado: " + resultado);
+                        }
+                    }
+                } else if (opcion == 5) {
+                    System.out.println("Saliendo del programa...");
+                } else {
+                    System.out.println("Opción no válida.");
+                }
                     }
                     // ... aquí irán las opciones 2, 3 y 4 en sus respectivas ramas
                     
