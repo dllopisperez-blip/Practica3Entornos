@@ -16,8 +16,12 @@ public class Practica3Entornos {
         int opcion = 0;
         
         while (opcion != 5) {
+feature/yezid-menu
             // Mejora en el menú: un salto de línea para que se vea ordenado en la consola
             System.out.println("\n--- MENÚ CALCULADORA ---");
+
+            System.out.println("\n--- MENÚ ---");
+
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
@@ -36,9 +40,24 @@ public class Practica3Entornos {
                     
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
+
                     } 
                     // ... aquí mantienes tus opciones 2, 3 y 4 tal y como las tienes estructuradas
                     
+
+                    } else if (opcion == 2) {
+                        System.out.println("Resultado: " + (a - b));
+                    } else if (opcion == 3) {
+                        System.out.println("Resultado: " + (a * b));
+                    } else if (opcion == 4) {
+                        if (b == 0) {
+                            System.out.println("Error: No se puede dividir entre cero.");
+                        } else {
+                            double resultado = (double) a / b;
+                            System.out.println("Resultado: " + resultado);
+                        }
+                    }
+
                 } else if (opcion == 5) {
                     System.out.println("Saliendo del programa...");
                 } else {
@@ -47,7 +66,7 @@ public class Practica3Entornos {
                 }
                 
             } catch (NumberFormatException e) {
-                System.out.println("Entrada no válida");
+                System.out.println("Error: Entrada no válida (introduce un número entero).");
             }
         }
         sc.close();
