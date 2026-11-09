@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Practica3Entornos {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int opcion = 0;
         
         while (opcion != 5) {
@@ -22,13 +22,13 @@ public class Practica3Entornos {
             System.out.print("Elige una opción: ");
             
             try {
-                opcion = Integer.parseInt(sc.nextLine());
+                opcion = Integer.parseInt(scanner.nextLine());
                 
                 if (opcion >= 1 && opcion <= 4) {
                     System.out.print("Primer número: ");
-                    int a = Integer.parseInt(sc.nextLine());
+                    int a = Integer.parseInt(scanner.nextLine());
                     System.out.print("Segundo número: ");
-                    int b = Integer.parseInt(sc.nextLine());
+                    int b = Integer.parseInt(scanner.nextLine());
                     
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
@@ -37,7 +37,7 @@ public class Practica3Entornos {
                     } else if (opcion == 3) {
                         System.out.println("Resultado: " + (a * b));
                     } else if (opcion == 4) {
-                         {
+                        if (b == 0) {
                             System.out.println("Error: No se puede dividir entre cero.");
                         } else {
                             double resultado = (double) a / b;
@@ -54,6 +54,6 @@ public class Practica3Entornos {
                 System.out.println("Error: Entrada no válida (introduce un número entero).");
             }
         }
-        sc.close();
+        scanner.close();
     }
 }
