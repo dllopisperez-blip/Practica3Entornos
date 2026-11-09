@@ -37,7 +37,7 @@ public class Practica3Entornos {
                     } else if (opcion == 3) {
                         System.out.println("Resultado: " + (a * b));
                     } else if (opcion == 4) {
-                        if (b == 0) {
+                         {
                             System.out.println("Error: No se puede dividir entre cero.");
                         } else {
                             double resultado = (double) a / b;
