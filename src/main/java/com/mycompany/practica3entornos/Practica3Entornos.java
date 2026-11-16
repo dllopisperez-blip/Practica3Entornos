@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Practica3Entornos {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int opcion = 0;
+        int opcion2 = 0;
         
-        while (opcion != 5) {
+        while (opcion2 != 5) {
             // Menú mejorado
             System.out.println("\n--- MENÚ CALCULADORA ---");
             System.out.println("1. Sumar");
@@ -22,21 +22,21 @@ public class Practica3Entornos {
             System.out.print("Elige una opción: ");
             
             try {
-                opcion = Integer.parseInt(sc.nextLine());
+                opcion2 = Integer.parseInt(sc.nextLine());
                 
-                if (opcion >= 1 && opcion <= 4) {
+                if (opcion2 >= 1 && opcion2 <= 4) {
                     System.out.print("Primer número: ");
                     int a = Integer.parseInt(sc.nextLine());
                     System.out.print("Segundo número: ");
                     int b = Integer.parseInt(sc.nextLine());
                     
-                    if (opcion == 1) {
+                    if (opcion2 == 1) {
                         System.out.println("Resultado: " + (a + b));
-                    } else if (opcion == 2) {
+                    } else if (opcion2 == 2) {
                         System.out.println("Resultado: " + (a - b));
-                    } else if (opcion == 3) {
+                    } else if (opcion2 == 3) {
                         System.out.println("Resultado: " + (a * b));
-                    } else if (opcion == 4) {
+                    } else if (opcion2 == 4) {
                         if (b == 0) {
                             System.out.println("Error: No se puede dividir entre cero.");
                         } else {
@@ -44,7 +44,7 @@ public class Practica3Entornos {
                             System.out.println("Resultado: " + resultado);
                         }
                     }
-                } else if (opcion == 5) {
+                } else if (opcion2 == 5) {
                     System.out.println("Saliendo del programa...");
                 } else {
                     System.out.println("Opción no válida. Debe ser un número entre 1 y 5.");
